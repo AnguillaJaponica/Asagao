@@ -834,3 +834,10 @@ Migrating to CreateMembers (20190609051752)
   [1m[36mMember Load (0.9ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
   [1m[36mMember Load (0.3ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
   [1m[36mMember Load (0.6ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."name" = ? LIMIT ?[0m  [["name", "Taro"], ["LIMIT", 1]]
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "members"[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "members"."id" FROM "members"[0m
+  [1m[36mMember Load (0.6ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mMember Load (0.5ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."name" = ? LIMIT ?[0m  [["name", "Taro"], ["LIMIT", 1]]
+  [1m[36mMember Load (0.4ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."sex" = ? AND "members"."administrator" = ? LIMIT ?[0m  [["sex", 1], ["administrator", 0], ["LIMIT", 1]]
+  [1m[36mMember Load (0.3ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."sex" = ? AND "members"."administrator" = ? LIMIT ?[0m  [["sex", 1], ["administrator", 1], ["LIMIT", 1]]
+  [1m[36mMember Load (0.4ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."sex" = ? AND "members"."administrator" = ? LIMIT ?[0m  [["sex", 2], ["administrator", 1], ["LIMIT", 1]]
