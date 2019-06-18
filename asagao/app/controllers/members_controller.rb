@@ -1,5 +1,7 @@
 class MembersController < ApplicationController
     def index
+        #会員名簿
+        @members = Member.order("number")
     end
 
     def new

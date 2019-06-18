@@ -841,3 +841,206 @@ Migrating to CreateMembers (20190609051752)
   [1m[36mMember Load (0.4ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."sex" = ? AND "members"."administrator" = ? LIMIT ?[0m  [["sex", 1], ["administrator", 0], ["LIMIT", 1]]
   [1m[36mMember Load (0.3ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."sex" = ? AND "members"."administrator" = ? LIMIT ?[0m  [["sex", 1], ["administrator", 1], ["LIMIT", 1]]
   [1m[36mMember Load (0.4ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."sex" = ? AND "members"."administrator" = ? LIMIT ?[0m  [["sex", 2], ["administrator", 1], ["LIMIT", 1]]
+Started GET "/" for ::1 at 2019-06-18 19:37:08 +0900
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Library/Ruby/Gems/2.3.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by TopController#index as HTML
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (2.9ms)
+  Rendered shared/_header.html.erb (17.1ms)
+  Rendered shared/_login_form.html.erb (0.5ms)
+  Rendered shared/_sidebar.html.erb (7.8ms)
+  Rendered shared/_footer.html.erb (0.8ms)
+Completed 200 OK in 943ms (Views: 882.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-06-18 19:37:27 +0900
+Processing by TopController#index as HTML
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (4.5ms)
+  Rendered shared/_header.html.erb (4.1ms)
+  Rendered shared/_login_form.html.erb (0.4ms)
+  Rendered shared/_sidebar.html.erb (3.6ms)
+  Rendered shared/_footer.html.erb (1.1ms)
+Completed 200 OK in 69ms (Views: 57.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/members" for ::1 at 2019-06-18 19:37:30 +0900
+Processing by MembersController#index as HTML
+  Rendering members/index.html.erb within layouts/application
+  Rendered members/index.html.erb within layouts/application (2.3ms)
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/takaterumasa/rails_practice1/asagao/Asagao/asagao/app/views/members/index.html.erb:22: syntax error, unexpected keyword_else, expecting keyword_end
+/Users/takaterumasa/rails_practice1/asagao/Asagao/asagao/app/views/members/index.html.erb:24: syntax error, unexpected keyword_else, expecting keyword_end
+/Users/takaterumasa/rails_practice1/asagao/Asagao/asagao/app/views/members/index.html.erb:26: syntax error, unexpected keyword_ensure, expecting keyword_end
+/Users/takaterumasa/rails_practice1/asagao/Asagao/asagao/app/views/members/index.html.erb:28: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/views/members/index.html.erb:22: syntax error, unexpected keyword_else, expecting keyword_end
+app/views/members/index.html.erb:24: syntax error, unexpected keyword_else, expecting keyword_end
+app/views/members/index.html.erb:26: syntax error, unexpected keyword_ensure, expecting keyword_end
+app/views/members/index.html.erb:28: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/members" for ::1 at 2019-06-18 19:37:53 +0900
+Processing by MembersController#index as HTML
+  Rendering members/index.html.erb within layouts/application
+  Rendered members/index.html.erb within layouts/application (1.2ms)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/takaterumasa/rails_practice1/asagao/Asagao/asagao/app/views/members/index.html.erb:22: syntax error, unexpected keyword_else, expecting keyword_end
+'.freeze; else 
+              ^
+/Users/takaterumasa/rails_practice1/asagao/Asagao/asagao/app/views/members/index.html.erb:26: syntax error, unexpected keyword_ensure, expecting keyword_end
+/Users/takaterumasa/rails_practice1/asagao/Asagao/asagao/app/views/members/index.html.erb:28: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/views/members/index.html.erb:22: syntax error, unexpected keyword_else, expecting keyword_end
+app/views/members/index.html.erb:26: syntax error, unexpected keyword_ensure, expecting keyword_end
+app/views/members/index.html.erb:28: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/members" for ::1 at 2019-06-18 19:39:12 +0900
+Processing by MembersController#index as HTML
+  Rendering members/index.html.erb within layouts/application
+  Rendered members/index.html.erb within layouts/application (4.1ms)
+Completed 500 Internal Server Error in 33ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/takaterumasa/rails_practice1/asagao/Asagao/asagao/app/views/members/index.html.erb:22: syntax error, unexpected keyword_else, expecting keyword_end
+'.freeze; else 
+              ^
+/Users/takaterumasa/rails_practice1/asagao/Asagao/asagao/app/views/members/index.html.erb:26: syntax error, unexpected keyword_ensure, expecting keyword_end
+/Users/takaterumasa/rails_practice1/asagao/Asagao/asagao/app/views/members/index.html.erb:28: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/views/members/index.html.erb:22: syntax error, unexpected keyword_else, expecting keyword_end
+app/views/members/index.html.erb:26: syntax error, unexpected keyword_ensure, expecting keyword_end
+app/views/members/index.html.erb:28: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/" for ::1 at 2019-06-18 19:39:19 +0900
+Processing by TopController#index as HTML
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (3.7ms)
+  Rendered shared/_header.html.erb (7.6ms)
+  Rendered shared/_login_form.html.erb (0.6ms)
+  Rendered shared/_sidebar.html.erb (5.5ms)
+  Rendered shared/_footer.html.erb (1.0ms)
+Completed 200 OK in 112ms (Views: 104.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/members" for ::1 at 2019-06-18 19:39:21 +0900
+Processing by MembersController#index as HTML
+  Rendering members/index.html.erb within layouts/application
+  Rendered members/index.html.erb within layouts/application (1.1ms)
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/takaterumasa/rails_practice1/asagao/Asagao/asagao/app/views/members/index.html.erb:22: syntax error, unexpected keyword_else, expecting keyword_end
+'.freeze; else 
+              ^
+/Users/takaterumasa/rails_practice1/asagao/Asagao/asagao/app/views/members/index.html.erb:26: syntax error, unexpected keyword_ensure, expecting keyword_end
+/Users/takaterumasa/rails_practice1/asagao/Asagao/asagao/app/views/members/index.html.erb:28: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/views/members/index.html.erb:22: syntax error, unexpected keyword_else, expecting keyword_end
+app/views/members/index.html.erb:26: syntax error, unexpected keyword_ensure, expecting keyword_end
+app/views/members/index.html.erb:28: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/members" for ::1 at 2019-06-18 19:41:10 +0900
+Processing by MembersController#index as HTML
+  Rendering members/index.html.erb within layouts/application
+  [1m[36mMember Load (8.8ms)[0m  [1m[34mSELECT "members".* FROM "members" ORDER BY number[0m
+  ↳ app/views/members/index.html.erb:4
+  Rendered members/index.html.erb within layouts/application (112.7ms)
+  Rendered shared/_header.html.erb (4.8ms)
+  Rendered shared/_login_form.html.erb (0.6ms)
+  Rendered shared/_sidebar.html.erb (4.6ms)
+  Rendered shared/_footer.html.erb (1.4ms)
+Completed 200 OK in 207ms (Views: 181.7ms | ActiveRecord: 11.8ms)
+
+
+Started GET "/members" for ::1 at 2019-06-18 19:41:44 +0900
+Processing by MembersController#index as HTML
+  Rendering members/index.html.erb within layouts/application
+  [1m[36mMember Load (0.8ms)[0m  [1m[34mSELECT "members".* FROM "members" ORDER BY number[0m
+  ↳ app/views/members/index.html.erb:4
+  Rendered members/index.html.erb within layouts/application (4.9ms)
+  Rendered shared/_header.html.erb (4.6ms)
+  Rendered shared/_login_form.html.erb (0.7ms)
+  Rendered shared/_sidebar.html.erb (4.9ms)
+  Rendered shared/_footer.html.erb (1.2ms)
+Completed 200 OK in 59ms (Views: 55.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/members" for ::1 at 2019-06-18 19:41:57 +0900
+Processing by MembersController#index as HTML
+  Rendering members/index.html.erb within layouts/application
+  [1m[36mMember Load (0.5ms)[0m  [1m[34mSELECT "members".* FROM "members" ORDER BY number[0m
+  ↳ app/views/members/index.html.erb:4
+  Rendered members/index.html.erb within layouts/application (3.6ms)
+  Rendered shared/_header.html.erb (4.4ms)
+  Rendered shared/_login_form.html.erb (0.5ms)
+  Rendered shared/_sidebar.html.erb (5.1ms)
+  Rendered shared/_footer.html.erb (0.8ms)
+Completed 200 OK in 71ms (Views: 66.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/members" for ::1 at 2019-06-18 19:42:06 +0900
+Processing by MembersController#index as HTML
+  Rendering members/index.html.erb within layouts/application
+  [1m[36mMember Load (1.1ms)[0m  [1m[34mSELECT "members".* FROM "members" ORDER BY number[0m
+  ↳ app/views/members/index.html.erb:4
+  Rendered members/index.html.erb within layouts/application (6.2ms)
+  Rendered shared/_header.html.erb (3.2ms)
+  Rendered shared/_login_form.html.erb (0.6ms)
+  Rendered shared/_sidebar.html.erb (5.1ms)
+  Rendered shared/_footer.html.erb (0.7ms)
+Completed 200 OK in 65ms (Views: 61.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for ::1 at 2019-06-18 19:42:10 +0900
+Processing by TopController#index as HTML
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (1.4ms)
+  Rendered shared/_header.html.erb (4.1ms)
+  Rendered shared/_login_form.html.erb (0.8ms)
+  Rendered shared/_sidebar.html.erb (3.9ms)
+  Rendered shared/_footer.html.erb (1.0ms)
+Completed 200 OK in 59ms (Views: 51.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/members" for ::1 at 2019-06-18 19:42:12 +0900
+Processing by MembersController#index as HTML
+  Rendering members/index.html.erb within layouts/application
+  [1m[36mMember Load (0.7ms)[0m  [1m[34mSELECT "members".* FROM "members" ORDER BY number[0m
+  ↳ app/views/members/index.html.erb:4
+  Rendered members/index.html.erb within layouts/application (6.1ms)
+  Rendered shared/_header.html.erb (1.8ms)
+  Rendered shared/_login_form.html.erb (0.3ms)
+  Rendered shared/_sidebar.html.erb (2.9ms)
+  Rendered shared/_footer.html.erb (0.5ms)
+Completed 200 OK in 69ms (Views: 59.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2019-06-18 19:42:14 +0900
+Processing by TopController#index as HTML
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (1.8ms)
+  Rendered shared/_header.html.erb (2.0ms)
+  Rendered shared/_login_form.html.erb (0.3ms)
+  Rendered shared/_sidebar.html.erb (2.9ms)
+  Rendered shared/_footer.html.erb (0.5ms)
+Completed 200 OK in 50ms (Views: 45.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/members" for ::1 at 2019-06-18 19:42:16 +0900
+Processing by MembersController#index as HTML
+  Rendering members/index.html.erb within layouts/application
+  [1m[36mMember Load (0.5ms)[0m  [1m[34mSELECT "members".* FROM "members" ORDER BY number[0m
+  ↳ app/views/members/index.html.erb:4
+  Rendered members/index.html.erb within layouts/application (4.9ms)
+  Rendered shared/_header.html.erb (2.1ms)
+  Rendered shared/_login_form.html.erb (0.3ms)
+  Rendered shared/_sidebar.html.erb (2.9ms)
+  Rendered shared/_footer.html.erb (0.6ms)
+Completed 200 OK in 62ms (Views: 56.4ms | ActiveRecord: 0.5ms)
+
+
