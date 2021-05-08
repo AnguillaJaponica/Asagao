@@ -90,7 +90,7 @@ GEM
       racc (~> 1.4)
     nokogiri (1.11.3-x86-mingw32)
       racc (~> 1.4)
-    puma (3.12.4)
+    puma (3.12.6)
     racc (1.5.2)
     rack (2.2.3)
     rack-test (1.1.0)
